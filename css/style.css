@@ -1,0 +1,249 @@
+/* --------------------------Header-------------------------- */
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 3, 76);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 35%;
+    height: 70%;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+
+.search {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 50%;
+    height: 40%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: -10%;
+    background-color: rgba(212, 218, 218, 0.718);
+
+}
+
+.search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.498);
+}
+.search input {
+    flex: 1;
+    height: 50%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search i{
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    background: rgb(241, 211, 17);
+    margin-left: 5px;
+}
+.user_menu {
+    width: 5%;
+}
+.user_menu i {
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    background: rgb(241, 211, 17);
+}
+
+.nav ul {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-left: -2%;
+    background-color: rgba(206, 218, 218, 0.512);
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.nav ul li {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 8%;
+    display: inline;
+    width: 10%;
+
+    padding: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    /* border: 3px solid black; */
+    background-color: rgb(241, 211, 17);
+    /* border: 3px solid rgba(0, 0, 0, 0.744); */
+}
+
+li:hover {
+    width: 10%;
+    padding: 10px;
+    border-radius: 40px;
+    border: 3px solid black;
+    background-color: rgb(241, 211, 17);
+}
+
+main {
+    display: flex;
+    margin-top: 5%;
+    flex: 1;
+    justify-content: space-around;
+}
+
+main h1 {
+    color: white;
+    margin-top: 15%;
+    font-size: 50px;
+}
+
+main .img {
+    margin-top: 3%;
+
+}
+main .img img{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    width: 30%;
+    height: 50%;
+
+
+}
+.main-left {
+    flex: 0.8;
+}
+
+.main-left .button {
+    margin-top: 5%;
+   
+}
+.main-left button {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(241, 211, 17);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.main-right img {
+    height: 100%;
+    width: 100%;
+    margin-left: -20%;
+
+}
+
+.group-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
+}
+
+.card {
+    background-color: aliceblue;
+    display: flex;
+    flex: 1;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.card:hover {
+    background-color: aquamarine;
+}
+
+.card-left {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.card-left p {
+    margin-top: 17%;
+}
+
+.card-left span {
+    color:  rgb(48, 11, 143);
+}
+.button-card {
+    margin-top: 10%;
+}
+
+.button-card button {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(241, 211, 17);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card-image {
+    margin-left: 10%;
+    flex: 0.5;
+    display: flex;
+    justify-content: end;
+}
+ .card-image img{
+    width: 90%;
+    height: 90%;
+}
+
+.next-card {
+    margin-top: 10%;
+}
+
+.next-card i {
+    color: white;
+}
+
+
+/* ----------------------Create_product------------------------- */
+
+dialog {
+    margin-left: 23%;
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.main .btn-create {
+    
+    
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+  
+
+
+/* ---------------------products-------------------------------- */
+
