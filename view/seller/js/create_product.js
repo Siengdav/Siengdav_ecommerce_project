@@ -5,7 +5,7 @@ const search = document.querySelector("#search");
 search.addEventListener("keyup", searchTask);
 const formdelete = document.querySelector("#id01")
 
-
+let products = []
 let productToEdit = null;
 
 // HIDE / SHOW ---------------------------------------------------------
