@@ -6,33 +6,6 @@ search.addEventListener("keyup", searchTask);
 const formdelete = document.querySelector("#id01")
 
 
-
-let products = [
-    {
-      name: "Name of product",
-      price: "100",
-      description: "",
-      quantity: "2",
-      currency: "$",
-      image: ""
-    },
-    {
-       name: "Name of product",
-       price: "100",
-       description: "",
-       quantity: "2",
-       currency: "$",
-       image: ""
-    },
-    {
-        name: "Name of product",
-        price: "100",
-        description: "",
-        quantity: "2",
-        currency: "$",
-        image: ""
-    },
-  ];
 let productToEdit = null;
 
 // HIDE / SHOW ---------------------------------------------------------

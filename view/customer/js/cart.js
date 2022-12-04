@@ -67,7 +67,7 @@ function displayOrderProduct(){
         console.log(price)
         count_price += parseInt(price.money)
     }
-    total.textContent = "Total : " + count_price;
+    total.textContent = "Total : " + count_price + "$" ;
     div_total.appendChild(total);
 
 
