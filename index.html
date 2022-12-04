@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Costumer</title>
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <!-- boxicons -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="view/assets/css/style.css">
+        <script src="view/customer/js/main.js"defer ></script>
 </head>
 <body>
     <header>
             <div class="header">
                 <div class="logo">
-                    <img src="image/logo.png" alt="">
+                    <img src="view/assets/image/logo.png" alt="">
                 </div>
                 <div class="search">
                     <i class='bx bx-search-alt'></i>
                     <input type="text" placeholder="">
                 </div>
                 <div class="user_menu">
-                    <i class="material-icons">people</i>
+                    <a href="view/seller/create_product.html">
+                        <i class="material-icons">people</i>
+                    </a>
+                    <a href="view/customer/cart.html">
+                  
+                        <i class="material-symbols-outlined">
+                            storefront
+                        </i>
+                    </a>
                 </div>
             </div>
             <div class="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="view/customer/products.html">Product</a></li>
+                    <li><a href=""> Contact</a></li>
                 </ul>
             </div>
     </header>
@@ -40,64 +50,19 @@
             <h1>Sell Headphones <br> online
                 </h1>
             <div class="img">
-                <img  src="image/headp" alt="">
-                <img class= 'hp1' src="image/headp" alt="">
+                <img  src="view/assets/image/headp" alt="">
+                <img class= 'hp1' src="view/assets/image/headp" alt="">
             </div>
             <div class="button">
                 <button>Start Buying</button>
             </div>
         </div>
         <div class="main-right">
-            <img src="image/hp1.png" alt="">
+            <img src="view/assets/image/hp1.png" alt="">
         </div>
     </main>
     <div class="group-card">
-        <div class="card">
-            <div class="card-left">
-                <div class="text">
-                    <p> <span>Name:</span> TUINYO Bluetooth <br>
-                        <span>Price:  </span>24$</p>
-                </div>
-                <div class="button-card">
-                    <button>Start buying</button>
-                </div>
-            </div>
-            <div class="card-image">
-                <img src="image/card1.png" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-left">
-                <div class="text">
-                    <p> <span>Name:</span> Soundcore<br>
-                        <span>Price:  </span>  40$</p> 
-                </div>
-                <div class="button-card">
-                    <button>Start buying</button>
-                </div>
-            </div>
-            <div class="card-image">
-                <img src="image/card2.png" alt="">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-left">
-                <div class="text">
-                    <p> <span>Name:</span> Jabra Evolve2 <br>
-                        <span>Price:  </span>126$</p>
-                </div>
-                <div class="button-card">
-                    <button>Start buying</button>
-                </div>
-            </div>
-            <div class="card-image">
-                <img src="image/card3.png" alt="">
-            </div>
-        </div>
-        <div class="next-card">
-            <i class="material-icons" onclick="onNextClick">chevron_right</i>
-        </div>
     </div>
-
 </body>
+
 </html>

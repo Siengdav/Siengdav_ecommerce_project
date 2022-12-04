@@ -4,75 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create</title>
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <!-- boxicons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/create_product.js" defer></script>
 </head>
 <body>
     <header>
             <div class="header">
                 <div class="logo">
-                    <img src="../../image/logo.png" alt="">
+                    <img src="../assets/image/logo.png" alt="">
                 </div>
                 <div class="search">
                     <i class='bx bx-search-alt'></i>
-                    <input type="text" placeholder="">
+                    <input type="text" placeholder="" id="search" >
                 </div>
-                <div class="user_menu">
-                    <i class="material-icons">people</i>
+                <div class="seller">
+                    <a href="../../index.html">
+                        <i class="material-icons">people</i>
+                    </a>
+                    <a href="#">
+                  
+                        <i class="material-symbols-outlined">
+                            storefront
+                        </i>
+                    </a>
                 </div>
+                
             </div>
             <div class="nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Contact</li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../customer/products.html">Product</a></li>
+                    <li><a href=""> Contact</a></li>
                 </ul>
             </div>
     </header>
-    <div id="dailog" >
+    <div id="dailog" style="display: none">
         <dialog open>
             <h1>Create Product</h1>
-            <div class="add-image">
-                <img src="" alt="">
-            </div>
             <form >
-                <div class="form-left">
                     <label for="">Name:</label>
                     <br>
-                    <input type="text" placeholder="..."> 
-                    <br><br>
+                    <input type="text" id="name" placeholder="..."> 
+                    <br>
                     <label for="">Price</label>
                     <br>
-                    <input type="text" placeholder="$$">
-                </div>
-                <br><br>
-                <div class="form-right">
+                    <input type="text" id="money" placeholder="$$">
+                    <br>
+                    <label for="">Description</label>
+                    <br>
+                    <input type="text" id="description" placeholder="">
+                    <br>
+                    <label for="">Image</label>
+                    <br>
+                    <input type="text" id="imge">
+                    <br>
                     <label for="">Quantity</label>
+                    
+                    <select name=""  id="quantity">
+                        <option >1</option>
+                        <option >2</option>
+                        <option >3</option>
+                    </select>
                     <br>
-                    <input type="text" >
-                    <br><br>
                     <label for="">Currency</label>
-                    <br>
-                    <input type="text">
-                </div>
+                    <select name=""  id="currency">
+                        <option >$</option>
+                        <option >B</option>
+                        <option >៛</option>
+                    </select>
             </form>
             <menu>
+                <button onclick="onCancel()" id="cancel">Cancel</button>
                 <!-- When clicking on button,  call the right function  -->
-                <button id="createEditButton" onclick="onCreate()">Create</button>
-              </menu>
+                <button id="createEditButton" onclick="onCreate()">Add++</button>
+            </menu>
         </dialog>
     </div>
+    <div id="id01" class="modal" style="display: none">
+        <dialog open>
+            <span  class="close" title="Close Modal">x</span>
+            <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <p>Are you sure you want to delete your account?</p>
+            
+                <div class="clearfix">
+                <button type="button"   class="cancelbtn">Cancel</button>
+                <button type="button"  class="deletebtn">Delete</button>
+                </div>
+            </div>
+            </form>
+        <dialog>
+    </div>
+      
     
     <div class="main">
         <div class="btn-create">
-            <button onclick="onCreateproduct()">Create Product</button>
+            <button onclick="onAddproduct()">Add Product</button>
+
+            <div id="btn-container"></div>
         </div>
     </div>
 </body>
+
 </html>

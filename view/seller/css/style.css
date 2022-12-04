@@ -1,0 +1,118 @@
+.seller {
+    width: 5%;
+}
+
+.seller i {
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    background: aquamarine;
+}
+
+dialog {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 28%;
+    margin-top: 8%;
+    height: 95%;
+}
+
+dialog h1 {
+    margin-top: 5%;
+    text-align: center;
+}
+form {
+    margin-left: 15%;
+    flex-direction: column;
+    /* justify-content: center; */
+    display: flex;
+
+}
+form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#quantity, #currency {
+    width: 10%;
+}
+#createEditButton {
+
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 32%;
+    background-color: rgb(241, 211, 17);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+}
+menu {
+    display: flex;
+    margin-top: 5%;
+
+}
+#cancel {
+
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+}
+input[type="text"]:hover {
+    background-color: rgba(128, 128, 128, 0.332);
+}
+.btn-create button{
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(241, 211, 17);
+}
+
+
+
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    align-items: center;
+    border-left: 6px solid rgb(241, 211, 17);
+
+}
+
+.image-info {
+    flex: 0.5;
+
+}
+img {
+    width: 40%;
+    height: 40%;
+}
+.question-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.img_edit,
+.img_dele{
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 5px;
+  /* display: flex; */
+  
+  
+}
+.card_ans {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
