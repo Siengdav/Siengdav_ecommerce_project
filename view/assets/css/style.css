@@ -1,9 +1,9 @@
-/* Header */
+/*-------------------------------------- Header--------------------------------------- */
 * {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    /* color: white; */
+
 }
 
 
@@ -217,7 +217,7 @@ main .img img{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .card-image {
-    /* margin-left: 10%; */
+
     flex: 0.5;
     display: flex;
     justify-content: end;
